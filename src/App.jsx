@@ -6,7 +6,6 @@ import Banner from "./components/Banner/Banner.jsx";
 import AppStore from "./components/AppStore/AppStore.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import Testtt from "./components/Testtt.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -24,7 +23,6 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-x-hidden">
       <Navbar />
-      <Testtt />
       <Hero />
       <Services />
       <Banner />
