@@ -5,6 +5,7 @@ import { IoFastFood } from "react-icons/io5";
 import { GiFoodTruck } from "react-icons/gi";
 import BgImg from "../../assets/website/coffee-texture.jpg";
 
+
 const bgImage = {
   backgroundImage: `url(${BgImg})`,
   backgroundColor: "#270c03",

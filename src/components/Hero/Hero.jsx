@@ -1,10 +1,20 @@
 import React from "react";
 import HeroPng from "../../assets/coffee2.png";
+import FooterBg from "../../assets/website/coffee-footer.jpg";
+
+const bgImage = {
+  backgroundImage: `url(${FooterBg})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  height: "100%",
+  width: "100%",
+};
 
 const Hero = () => {
   return (
     <>
-      <div className="min-h-[550px] sm:min-h-[600px] bg-brandDark flex justify-center items-center text-white">
+      <div style={bgImage} className="min-h-[550px] sm:min-h-[600px] bg-brandDark flex justify-center items-center text-white">
         <div className="container pb-8 sm:pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* text content section */}
@@ -25,7 +35,7 @@ const Hero = () => {
                 in the city
               </h1>
               <div data-aos="fade-up" data-aos-delay="400">
-                <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
+                <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded">
                   Coffee And Code
                 </button>
               </div>
@@ -46,14 +56,14 @@ const Hero = () => {
                 data-aos="fade-left"
                 className="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl absolute top-10 left-10"
               >
-                <h1 className="text-white">Hey Coder</h1>
+                <h1 className="text-white">Hey Customers</h1>
               </div>
               <div
                 data-aos="fade-right"
                 data-aos-offset="0"
-                className="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl absolute bottom-10 right-10"
+                className="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl absolute bottom-10 right-7"
               >
-                <h1 className="text-white">Best Coffee</h1>
+                <h1 className="text-white">Welcome to Coffee</h1>
               </div>
             </div>
           </div>

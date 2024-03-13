@@ -10,19 +10,19 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Services",
-    link: "/#services",
+    name: "About",
+    link: "/#about",
   },
   {
     id: 3,
-    name: "About",
-    link: "/#about",
+    name: "Services",
+    link: "/#services",
   },
 ];
 const Navbar = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-secondary to-secondary/90 shadow-md bg-gray-900 text-white">
+      <div className=" bg-black text-white">
         <div className="container py-2">
           <div className="flex justify-between items-center">
             {/* Logo section */}
@@ -48,16 +48,16 @@ const Navbar = () => {
                   <li key={menu.id}>
                     <a
                       href={menu.link}
-                      className="inline-block text-xl py-4 px-4 text-white/70 hover:text-white duration-200"
+                      className="inline-block text-xl py-4 px-4 text-white/60 hover:text-white duration-200 font-sans"
                     >
                       {menu.name}
                     </a>
                   </li>
                 ))}
               </ul>
-              <button className=" bg-primary/70 hover:scale-105 duration-200 text-white px-4 py-2 rounded-full flex items-center gap-3">
+              <button className=" bg-white hover:scale-105 duration-200 text-black px-4 py-2 rounded-lg flex items-center gap-3">
                 Order
-                <FaCoffee className="text-xl text-white drop-shadow-sm cursor-pointer" />
+                <FaCoffee className="text-xl text-black drop-shadow-sm cursor-pointer" />
               </button>
             </div>
           </div>
